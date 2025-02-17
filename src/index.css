@@ -24,7 +24,7 @@
         @apply w-full h-auto;
     }
     main{
-        @apply w-10/12 mx-auto;
+        @apply xxs:w-full lg:w-10/12 mx-auto;
     }
     sidebar{
         @apply w-full h-auto;
