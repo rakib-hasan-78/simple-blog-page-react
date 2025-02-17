@@ -1,0 +1,52 @@
+[
+  {
+    "id": "8f2a47b3-9c42-4d9f-bd77-3d7e2a481f29",
+    "cover": "https://i.ibb.co.com/HDRWZ9vy/1.jpg",
+    "title": "Mastering JavaScript",
+    "author": "James Anderson",
+    "author_image": "https://i.ibb.co.com/MyxL69zJ/boy1.png",
+    "posted_date": "Feb 15 (2 days ago)",
+    "reading_time": 5,
+    "hash_tags": ["JavaScript", "WebDev", "Coding"]
+  },
+  {
+    "id": "c91eb0a8-3a66-4738-92e7-7d39aab4e659",
+    "cover": "https://i.ibb.co.com/nNfWQmwL/3.png",
+    "title": "React in Depth",
+    "author": "Emily Johnson",
+    "author_image": "https://i.ibb.co.com/20KpHvFV/girl1.jpg",
+    "posted_date": "Feb 12 (7 days ago)",
+    "reading_time": 8,
+    "hash_tags": ["React", "Frontend", "WebDevelopment"]
+  },
+  {
+    "id": "5f7d8c99-0f3d-4ae4-ae5e-6eb2d11c12af",
+    "cover": "https://i.ibb.co.com/TBGGQ47f/nodejs.webp",
+    "title": "Understanding Node.js",
+    "author": "Michael Williams",
+    "author_image": "https://i.ibb.co.com/sdt55P9d/boy2.jpg",
+    "posted_date": "Feb 10 (12 days ago)",
+    "reading_time": 6,
+    "hash_tags": ["Node.js", "Backend", "JavaScript"]
+  },
+  {
+    "id": "b3a1e687-7a4f-49eb-bb1e-b4a8d16cdbeb",
+    "cover": "https://i.ibb.co.com/VYQgNzS9/2.png",
+    "title": "The Future of Cloud Computing",
+    "author": "Sophia Martinez",
+    "author_image": "https://i.ibb.co.com/ZRpPVSd2/girl2.jpg",
+    "posted_date": "Feb 8 (14 days ago)",
+    "reading_time": 10,
+    "hash_tags": ["Cloud", "AWS", "DevOps"]
+  },
+  {
+    "id": "dd64fa29-c92b-4011-9fa8-bd0d1ec8472b",
+    "cover": "https://i.ibb.co.com/5gGCBMb7/4.jpg",
+    "title": "Top Free Resources for Developers",
+    "author": "Daniel Thompson",
+    "author_image": "https://i.ibb.co.com/4Z2WdkM5/Ellipse.png",
+    "posted_date": "Feb 5 (17 days ago)",
+    "reading_time": 7,
+    "hash_tags": ["FreeResources", "Learning", "OpenSource"]
+  }
+]
