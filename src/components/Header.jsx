@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className='header'>
             <main>
-                <div className="container flex content-center items-center justify-between  px-1 pt-8 pb-3">
+                <div className="container flex content-center items-center justify-between  px-3 pt-8 pb-3">
                     <Title tag={`1`} text={`knowledge cafe`} />
                     <div className='w-14 h-14'>
                         <img src={profilePicture} alt="profile-picture" />
