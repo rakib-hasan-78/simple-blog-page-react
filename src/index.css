@@ -50,7 +50,7 @@
     }
 
     span{
-        @apply text-stone-500 font-medium xxs:text-xs md:text-sm lg:text-lg;
+        @apply text-stone-500 font-medium xxs:text-xs md:text-xs;
     }
     a{
         @apply underline text-indigo-800/80 xxs:text-sm md:text-base lg:text-xl font-semibold ;
