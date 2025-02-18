@@ -1,10 +1,9 @@
 
-import Title from './utilities/Title';
-import Text from './utilities/Text';
+import Header from './components/Header';
 function App() {
   return (
     <>
-      <a href="#">the final recall</a>
+      <Header />
     </>
   )
 }
