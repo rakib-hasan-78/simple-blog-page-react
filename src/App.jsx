@@ -1,6 +1,7 @@
 
 import Header from './components/Header';
-import Contents from './utilities/Contents';
+import Contents from './components/Contents';
+
 function App() {
   return (
     <>
