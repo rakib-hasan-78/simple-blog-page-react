@@ -25,7 +25,7 @@ const Blog = () => {
                     </div>
                 </div>
                 {/* bookmark*/}
-                <div className='flex px-1 items-center space-x-3'>
+                <div className='flex px-1 items-center xxs:flex-col xxs:space-y-2 sm:space-y-0 sm:flex-row sm:space-x-3'>
                     <Text className={`text-sm`} tag={`span`} text={`05 min read`} />
                     <div className='w-4'>
                     <img src={bookmark} alt="" />
@@ -33,7 +33,7 @@ const Blog = () => {
                 </div>
             </div>
             <div className='w-full flex items-center justify-start p-3 pr-14 pb-5'>
-                <Title className={`pr-24`} tag={`2`} text={`how to make changes to pursue a bter lifw e life is al.`}/>
+                <Title className={`md:pr-24`} tag={`2`} text={`how to make changes to pursue a bter lifw e life is al.`}/>
             </div>
             {/* tags */}
             <div className='w-full py-4 flex items-center justify-start space-x-6 px-4 pb-4'>

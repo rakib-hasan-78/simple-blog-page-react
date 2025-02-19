@@ -7,11 +7,11 @@ const Contents = () => {
             <main>
                 <div className="container flex flex-wrap items-start  xxs:flex-col lg:flex-row justify-between px-3">
                     {/* blogs' field */}
-                    <div className='w-7/12 bg-white'>
+                    <div className='xxs:w-full lg:w-7/12 bg-white'>
                         <Blog />
                     </div>
                     {/* blogs' info */}
-                    <div className='w-4/12 mt-10'>
+                    <div className='xxs:w-full lg:w-4/12 mt-10'>
                         <Sidebar />
                     </div>
 
