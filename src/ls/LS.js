@@ -1,5 +1,6 @@
 
 // get local storage ===>
+    
 const getLS = () => {
 
     const LS = localStorage.getItem('blog');
@@ -14,7 +15,7 @@ const saveLS = (blog) =>{
 }
 
 // addToLS function to pick data IDs ===>
-    
+
 const addToLS = id=>{
     const addID =  getLS();
     addID.push(id);

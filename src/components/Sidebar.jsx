@@ -5,7 +5,7 @@ import BlogList from './BlogList';
 
 const Sidebar = () => {
     return (
-        <sidebar className='flex items-start justify-start space-y-5 flex-col'>
+        <aside className='flex items-start justify-start space-y-5 flex-col'>
             <ReadingTime />
             <div className='w-full bg-stone-200 py-4 pb-9 flex flex-col items-start rounded-md'>
                 <BMBlog />
@@ -18,7 +18,7 @@ const Sidebar = () => {
                     <BlogList />
                 </div>
             </div>
-        </sidebar>
+        </aside>
     );
 };
 
