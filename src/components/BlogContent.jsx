@@ -5,7 +5,7 @@ import Title from '../utilities/Title';
 import Text from '../utilities/Text';
 import PropTypes from 'prop-types';
 
-const BlogContent = ({data, clickHandler}) => {
+const BlogContent = ({data, clickHandler, readingHandler}) => {
     const {
         cover,
         title,
@@ -50,7 +50,7 @@ const BlogContent = ({data, clickHandler}) => {
                     ))} className={`lowercase`}/>
                 </div>
                 <div className='w-full px-3 pb-10'>
-                    <a href="#">mark as read</a>
+                    <a onClick={(e)=>{e.preventDefault(); readingHandler(reading_time)}} href="#">mark as read</a>
                 </div>
                 <div className='w-full pb-4'>
                     <img src={line} alt="content-border" className='' />

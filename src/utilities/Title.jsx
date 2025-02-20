@@ -4,7 +4,7 @@ import React from 'react';
 const Title = ({tag, className, text}) => {
     const TAG = `h${tag}`;
     return (
-        <TAG className={` ${className}`}>
+        <TAG  className={` ${className}`}>
             {text}
         </TAG>
     );
