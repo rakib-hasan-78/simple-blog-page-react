@@ -3,10 +3,10 @@ import bookmark from '../assets/Vector.svg';
 import line from '../assets/Line.svg'; 
 import Title from '../utilities/Title';
 import Text from '../utilities/Text';
+import PropTypes from 'prop-types';
 
-const BlogContent = ({data}) => {
+const BlogContent = ({data, clickHandler}) => {
     const {
-        id,
         cover,
         title,
         author,
@@ -15,8 +15,10 @@ const BlogContent = ({data}) => {
         reading_time,
         hash_tags =[]
     } = data;
+
+
     return (
-        <div className='w-full h-auto flex flex-col items-center justify-center  shadow-lg'>
+        <div className='w-full h-auto flex flex-col items-center justify-center mb-10'>
                 <div className='w-full'>
                     <img className='rounded-md' src={cover} alt={title} />
                 </div>
@@ -32,8 +34,8 @@ const BlogContent = ({data}) => {
                     </div>
                     {/* bookmark*/}
                     <div className='flex px-1 items-center xxs:flex-col xxs:space-y-2 sm:space-y-0 sm:flex-row sm:space-x-3'>
-                        <Text className={`text-sm`} tag={`span`} text={`${reading_time} min`} />
-                        <div className='w-4'>
+                        <Text  className={`text-sm`} tag={`span`} text={`${reading_time} min`} />
+                        <div onClick={()=>clickHandler(title)} className='w-4 cursor-pointer'>
                         <img src={bookmark} alt="bookmark-button" />
                         </div>
                     </div>
@@ -56,6 +58,21 @@ const BlogContent = ({data}) => {
                 </div>    
         </div>
     );
+};
+
+// Define PropTypes
+BlogContent.propTypes = {
+    data: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        cover: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        author: PropTypes.string.isRequired,
+        author_image: PropTypes.string.isRequired,
+        posted_date: PropTypes.string.isRequired,
+        reading_time: PropTypes.number.isRequired,
+        hash_tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }).isRequired,
+    clickHandler: PropTypes.func.isRequired,
 };
 
 export default BlogContent;
