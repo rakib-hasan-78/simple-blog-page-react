@@ -35,7 +35,7 @@ const BlogContent = ({data, clickHandler, readingHandler}) => {
                     {/* bookmark*/}
                     <div className='flex px-1 items-center xxs:flex-col xxs:space-y-2 sm:space-y-0 sm:flex-row sm:space-x-3'>
                         <Text  className={`text-sm`} tag={`span`} text={`${reading_time} min`} />
-                        <div onClick={()=>clickHandler(title)} className='w-4 cursor-pointer'>
+                        <div onClick={()=>clickHandler(data)} className='w-4 cursor-pointer'>
                         <img src={bookmark} alt="bookmark-button" />
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const BlogContent = ({data, clickHandler, readingHandler}) => {
                     ))} className={`lowercase`}/>
                 </div>
                 <div className='w-full px-3 pb-10'>
-                    <a onClick={(e)=>{e.preventDefault(); readingHandler(reading_time)}} href="#">mark as read</a>
+                    <a onClick={(e)=>{e.preventDefault(); readingHandler(data)}} href="#">mark as read</a>
                 </div>
                 <div className='w-full pb-4'>
                     <img src={line} alt="content-border" className='' />

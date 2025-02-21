@@ -18,8 +18,10 @@ const saveLS = (blog) =>{
 
 const addToLS = id=>{
     const addID =  getLS();
-    addID.push(id);
-    saveLS(addID); 
+     // Prevent adding duplicate IDs
+    
+        addID.push(id);
+        saveLS(addID); 
 }
 
 export { getLS, addToLS};

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Blog from './Blog';
 import Sidebar from './Sidebar';
+import { addToLS, getLS } from '../ls/LS';
+
 const Contents = () => {
     const [ data , setData ] = useState([]);
     const [bookmark, setBookmark] = useState([]);
@@ -8,19 +10,39 @@ const Contents = () => {
 
     console.log(bookmark)
     useEffect(()=>{
-        fetch('../../public/data/db.json')
+        fetch('/data/db.json')
             .then((response) => response.json())
             .then((data) => {
                 setData(data)
-            })
+            });
+
+
     },[])
 
-    const clickHandler = (title)=>{
-        setBookmark([...bookmark, title])
+    useEffect(() => {
+        const bookmarkIds = getLS(); 
+        const bookmarkedTitles = bookmarkIds.map(id => {
+            const foundItem = data.find(item => item.id === id); 
+            return foundItem ? foundItem.title : null; // 
+        }).filter(title => title !== null);
+
+        const totalReadTime = bookmarkIds.reduce((prevTime , id)=>{
+            const time = data.find(t=>t.id===id );
+            return time ? prevTime + time.reading_time : time; 
+        },0);
+        setReadingTime(totalReadTime);
+        setBookmark(bookmarkedTitles);
+
+    }, [data]);
+
+    const clickHandler = (data)=>{
+        addToLS(data.id);
+        setBookmark((prev)=> [...prev, data.title])
     }
 
-    const readingHandler = read=>{
-        setReadingTime(readingTime => readingTime + read)
+    const readingHandler = data=>{
+        addToLS(data.id)
+        setReadingTime(readingTime => readingTime + data.reading_time)
     }
 
     return (
@@ -43,3 +65,5 @@ const Contents = () => {
 };
 
 export default Contents;
+
+

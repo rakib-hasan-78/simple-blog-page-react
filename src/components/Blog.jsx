@@ -16,8 +16,9 @@ const Blog = ({data, clickHandler, readingHandler}) => {
 };
 
 Blog.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.array.isRequired,
     clickHandler: PropTypes.func,
+    readingHandler: PropTypes.func,
 }
 
 export default Blog;
