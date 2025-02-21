@@ -2,7 +2,7 @@
   {
     "id": "8f2a47b3-9c42-4d9f-bd77-3d7e2a481f29",
     "cover": "https://i.ibb.co.com/HDRWZ9vy/1.jpg",
-    "title": "Mastering JavaScript",
+    "title": "Mastering JavaScript: A Complete Guide",
     "author": "James Anderson",
     "author_image": "https://i.ibb.co.com/MyxL69zJ/boy1.png",
     "posted_date": "Feb 15 (2 days ago)",
@@ -12,7 +12,7 @@
   {
     "id": "c91eb0a8-3a66-4738-92e7-7d39aab4e659",
     "cover": "https://i.ibb.co.com/nNfWQmwL/3.png",
-    "title": "React in Depth",
+    "title": "React in Depth: A Comprehensive Guide",
     "author": "Emily Johnson",
     "author_image": "https://i.ibb.co.com/20KpHvFV/girl1.jpg",
     "posted_date": "Feb 12 (7 days ago)",
@@ -22,7 +22,7 @@
   {
     "id": "5f7d8c99-0f3d-4ae4-ae5e-6eb2d11c12af",
     "cover": "https://i.ibb.co.com/TBGGQ47f/nodejs.webp",
-    "title": "Understanding Node.js",
+    "title": "Understanding Node.js: A Guide",
     "author": "Michael Williams",
     "author_image": "https://i.ibb.co.com/sdt55P9d/boy2.jpg",
     "posted_date": "Feb 10 (12 days ago)",

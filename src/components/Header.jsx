@@ -8,7 +8,7 @@ const Header = () => {
         <header className='header'>
             <main>
                 <div className="container flex content-center items-center justify-between  px-3 pt-8 pb-3">
-                    <Title tag={`1`} text={`knowledge cafe`} />
+                    <Title tag={`1`} text={`café du savoir`} />
                     <div className='w-14 h-14'>
                         <img src={profilePicture} alt="profile-picture" />
                     </div>
@@ -19,4 +19,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Header;  
