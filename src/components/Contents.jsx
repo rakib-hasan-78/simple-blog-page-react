@@ -48,7 +48,7 @@ const Contents = () => {
     return (
         <section className=' py-2 mt-3'>
             <main>
-                <div className="container flex flex-wrap items-start  xxs:flex-col lg:flex-row justify-between px-3">
+                <div className="container flex flex-wrap items-start  xxs:flex-col-reverse lg:flex-row justify-between px-3">
                     {/* blogs' field */}
                     <div className='xxs:w-full lg:w-7/12 bg-white'>
                         <Blog data={data} clickHandler={clickHandler} readingHandler={readingHandler } />
